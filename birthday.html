@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, My Love!</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen Video Background */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Heading Styles */
+        h1 {
+            font-size: 3em;
+            margin-top: 20vh;
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #f39c12;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+            margin-top: 20px;
+        }
+
+        /* Heart Icon Styling */
+        .heart {
+            font-size: 120px;
+            color: red;
+            margin-top: 20px;
+            animation: bounce 1.5s infinite alternate;
+        }
+
+        /* Message Styling */
+        .message {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+            padding: 0 10px;
+        }
+
+        /* Button Styling */
+        .button {
+            background-color: #e74c3c;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
+        }
+
+        /* Animation for Fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for Heart Bounce */
+        @keyframes bounce {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .heart {
+                font-size: 100px;
+            }
+
+            .message {
+                font-size: 1em;
+                padding: 0 5px;
+            }
+
+            .button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <video class="background" autoplay muted loop>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Birthday Message -->
+    <h1>Happy Birthday, My Love!</h1>
+    <h2>The most beautiful and beloved person I have ever met</h2>
+
+    <!-- Heart Animation -->
+    <div class="heart">&#10084;&#65039;</div>
+
+    <!-- Personal Message -->
+    <div class="message">
+        <p>
+            Today is the special day when I get to celebrate you, the person who fills my heart with so much love and joy. You're not only my love, you're the reason I smile every day, the one who makes every moment special. I promise to make every day with you as beautiful as today. Happy Birthday, my forever love.
+        </p>
+    </div>
+
+    <!-- Call to Action Button -->
+    <a href="#" class="button">I Love You Forever</a>
+
+    <!-- Optional JavaScript -->
+    <script>
+        // You can add more interactivity here (e.g., animations or transitions)
+        document.querySelector('.button').addEventListener('click', () => {
+            alert("You're my everything!");
+        });
+    </script>
+
+</body>
+</html>
